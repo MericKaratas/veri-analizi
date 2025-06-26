@@ -1,17 +1,16 @@
-INSERT INTO tickets (
-    kimlik,
-    baslik,
-    birim,
-    durum,
-    aciklama,
-    acilis_tarihi,
-    cozulme_suresi,
-    ilerleme,
-    cozulme_suresi_asildi,
-    istek_sahibi,
-    teknisyen,
-    cozum_tarihi,
-    kapanis_tarihi
-) VALUES (
-    %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+CREATE TABLE tickets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    kimlik VARCHAR(100),
+    baslik TEXT,
+    birim VARCHAR(100),
+    durum VARCHAR(100),
+    aciklama TEXT,
+    acilis_tarihi DATETIME,
+    cozulme_suresi VARCHAR(100),
+    ilerleme VARCHAR(100),
+    cozulme_suresi_asildi VARCHAR(100),
+    istek_sahibi VARCHAR(100),
+    teknisyen VARCHAR(100),
+    cozum_tarihi DATETIME,
+    kapanis_tarihi DATETIME
 );
