@@ -1,0 +1,17 @@
+INSERT INTO tickets (
+    kimlik,
+    baslik,
+    birim,
+    durum,
+    aciklama,
+    acilis_tarihi,
+    cozulme_suresi,
+    ilerleme,
+    cozulme_suresi_asildi,
+    istek_sahibi,
+    teknisyen,
+    cozum_tarihi,
+    kapanis_tarihi
+) VALUES (
+    %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s
+);
